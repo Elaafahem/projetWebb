@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 5%;
+    background: url(../img/kk.jpg) no-repeat center;
+
+}
+
+.questions {
+    margin: 3rem auto;
+    width: 90vw;
+    padding: 2rem;
+    background: #7fb4c0;
+    cursor: default;
+    border-radius: 1rem;
+}
+
+#question {
+    margin-bottom: 1rem;
+}
+
+.option {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    border-bottom: solid 0.1rem #353b48;
+    width: 15rem;
+    background: #f0f2f3;
+    border-radius: 1rem;
+}
+
+.option:hover {
+    color: #7fb4c0;
+}
+
+ol {
+    position: relative;
+    padding: 0 1.5rem;
+    color: black;
+}
+
+span {
+    display: block;
+    padding: 0.1rem 0.7rem;
+    border-radius: 1rem;
+}
+
+#answer {
+    margin-top: 2.5rem;
+}
+
+#stat {
+    margin-top: 1.5rem;
+    color: #353b48;
+}
+
+.buttons {
+    text-align: center;
+}
+
+button {
+    padding: 0.2rem 1.5rem;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+    border-bottom: solid 0.1rem #353b48;
+    color: #353b48;
+    background: #eff3f4;
+}
+
+button:active {
+    background: #7fb4c0;
+}
+
+#scoreboard,
+#answerBank {
+    width: 20rem;
+    background: #7fb4c0;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 10%;
+    margin-left: 37.5%;
+    margin-top: 10%;
+    top: 5rem;
+    display: none;
+
+
+}
+
+#score-title {
+    margin: 1rem 0;
+}
+
+#score-btn,
+#check-answer {
+    margin-top: 1rem;
+}
+
+#score {
+    font-size: 2.5rem;
+}
+
+#answerBank li {
+    text-align: left;
+    margin-bottom: 0.2rem;
+    font-size: larger;
+}
+
+#answers {
+    margin-top: 1rem;
+}

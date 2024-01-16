@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Contact</title>
+  <script LANGUAGE="javascript">
+    function myFunctions() {
+      // Get form elements
+      var name = document.getElementsByName("name")[0].value;
+      var email = document.getElementsByName("email")[0].value;
+      var subject = document.getElementsByName("subject")[0].value;
+      var message = document.getElementsByName("message")[0].value;
+      var statusZone = document.querySelector(".statusZone");
+
+      // Simple form validation
+      if (name === "" || email === "" || subject === "" || message === "") {
+        statusZone.innerHTML = "Veuillez remplir tous les champs.";
+        statusZone.style.color = "red";
+      } else {
+        // You can perform additional validation or send the form data to a server here
+
+        // For now, let's just submit the form
+        document.querySelector(".contact-form").submit();
+
+        // You can also display a success message if needed
+        statusZone.innerHTML = "Message envoyé avec succès!";
+        statusZone.style.color = "green";
+
+        // Optional: You can reset the form fields after submission
+        document.querySelector(".contact-form").reset();
+      }
+
+      // Prevent the default form submission
+      return false;
+    }
+  </script>
+</head>
+
+<body>
+  <!-- NavBar -->
+
+  <nav class="navbar">
+    <div class="inner-width">
+
+      <div class="navbar-menu FR">
+        <a href="../index.html">Home</a>
+        <a href="../index.html">Compétance</a>
+        <a href="../index.html">Expérience</a>
+        <a href="../index.html">Éducation</a>
+        <a href="quiz.html" target="_blank">Quiz</a>
+        <a href="contact.html" target="_blank">Contact</a>
+      </div>
+
+
+    </div>
+  </nav>
+  <!-- Contact -->
+
+  <section id="contact">
+    <div class="inner-width">
+      <h1 class="section-title FR">Contactez moi !</h1>
+
+
+      <div class="contact-info">
+        <div class="item">
+          <i class="fas fa-mobile-alt" id="item1"></i>
+          +216 92 933 020
+        </div>
+
+        <div class="item" onclick="window.location.href='mailto:fahemalaa10@gmail.com'">
+          <i class="fas fa-envelope" id="item2"></i>
+          fahemalaa10@gmail.com
+        </div>
+
+        <div class="item">
+          <i class="fas fa-map-marker-alt" id="item3"></i>
+          Sfax, Tunisie
+        </div>
+      </div>
+
+      <form action="contact.html" method="POST" class="contact-form FR">
+        <input type="text" class="nameZone" name="name" placeholder="Votre nom" />
+        <input type="text" class="emailZone" name="email" placeholder="Votre email" />
+        <input type="text" class="subjectZone" name="subject" placeholder="Objet" />
+        <textarea class="messageZone" name="message" placeholder="Message"></textarea>
+
+        <div class="statusZone"></div>
+
+        <input type="submit" value="Envoyer" class="btn submit FR" onclick="myFunctions()" />
+
+
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer>
+    <div class="inner-width">
+      <div class="copyrights FR">
+        &copy; 2023 | Créé par <a href="#">Elaa fahem</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Remonter en haut  -->
+
+  <button class="goTop"><i class="fas fa-arrow-up"></i></button>
+</body>
+
+</html>

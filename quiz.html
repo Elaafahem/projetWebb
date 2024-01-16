@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/quiz.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- font awesome cdn link !-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <script type="text/javascript"
+    src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=l-nSe1dv91PL5HA-dWHKiziw0APif03IGs620QxQ12SQh6eZpW0VptVFdPWng9cmflyusrsf6azDa7bvY5qf5tG7uVCxonPpIlAnv7BdhHxJuMCA0l7CfmOxIW_wWdlUGnHIVDp-Axa8CkAlnH8JVYI2580g90w8sIdYH85siZjpr2PSIYHEk_15q3iSiH3sQUQtOhzFhN1GUBLmDqzCxDB1ro7OTxqGrWP3GbXgPaGHrUsXcRwwGDFZDBxGechGEZCy91IGSAUu-dDC1iDVmP1-rD6-jDGNhdPqrxZSJTl1H5_mkdaPS9mvmtw8h_EWeqhVUPcqx-3UyNBUxVwZ5SAAsU6egnbipwmnDHTIibuqvtzFmLfsDuK1GbXeXP8iyQOG8tLEdC6yuL3_DujFSw"
+    charset="UTF-8"></script>
+  <script LANGUAGE="javascript" src="../js/js.js"></script>
+  <title>Quiz</title>
+</head>
+
+<body>
+  <!-- NavBar -->
+
+  <nav class="navbar">
+    <div class="inner-width">
+
+      <div class="navbar-menu FR">
+        <a href="../index.html">Home</a>
+        <a href="../index.html">Compétance</a>
+        <a href="../index.html">Expérience</a>
+        <a href="../index.html">Éducation</a>
+        <a href="quiz.html" target="_blank">Quiz</a>
+        <a href="contact.html" target="_blank">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <div id="quiz-container">
+    <!-- question container -->
+    <div class="questions">
+      <h2 id="question"></h2>
+      <ol type="A">
+        <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
+        <li class="option"><span id="option1" onclick="calcScore(this)"></span></li>
+        <li class="option"><span id="option2" onclick="calcScore(this)"></span></li>
+        <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
+      </ol>
+      <h4 id="stat"></h4>
+    </div>
+
+    <div class="buttons">
+      <button type="button" class="next">Next</button>
+    </div>
+
+  </div>
+
+  <!-- scoreboard section -->
+  <div id="scoreboard">
+    <h2 id="score-title">Your Score</h2>
+    <h2 id="score"></h2>
+    <button type="button" id="score-btn" onclick="backToQuiz()">Back to Quiz</button>
+    <button type="button" id="check-answer" onclick="checkAnswer()">Check Answers</button>
+  </div>
+
+  <!-- answers section -->
+  <div id="answerBank">
+    <h2>Answers :</h2>
+    <ol type="1" id="answers">
+
+    </ol>
+    <button type="button" id="score-btn" onclick="backToQuiz()">Back to Quiz</button>
+  </div>
+
+  <!-- Footer -->
+
+  <footer>
+    <div class="inner-width">
+      <div class="copyrights FR">
+        &copy; 2023 | Créé par <a href="#"> Elaa FAHEM </a>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/js.js"></script>
+
+  <!-- Remonter en haut  -->
+
+  <button class="goTop"><i class="fas fa-arrow-up"></i></button>
+</body>
+
+</html>
